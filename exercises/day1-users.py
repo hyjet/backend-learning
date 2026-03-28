@@ -7,7 +7,7 @@ users = [
 
 def filter_adults(users):
     """Return a list of users who are 21 or older."""
-    return [user for user in users if user["age"] >= 18]
+    return [user for user in users if user["age"] >= 21]
 
 if __name__ == "__main__":
     adults = filter_adults(users)
