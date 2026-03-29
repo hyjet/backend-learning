@@ -124,3 +124,36 @@ if __name__ == "__main__":
 This makes sure code only runs when the file is executed directly.
 
 ---
+
+## Functions
+
+Functions let you reuse logic instead of repeating code.
+
+```python
+def greet_user(name):
+    return f"Hello {name}"
+```
+Lambda
+
+Lambda is a short way to write a small function.
+
+```python
+#Normal Version
+def get_age(user):
+    return user["age"]
+
+##Lambda Version
+lambda user: user["age"]
+
+```
+Example:
+
+```python
+oldest_user = max(users, key=lambda user: user["age"])
+```
+
+This means:
+
+-   Go through each user
+-   Use their age for comparison
+-   Return the user with the highest age
